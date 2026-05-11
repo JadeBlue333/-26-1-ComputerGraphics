@@ -7,7 +7,7 @@ Sogang Art&Technology 2026-1 Computer Graphics
 Not even god can stop me!
 BGM - Cherish (My Love) Inst. by Illit https://youtu.be/O73guBeqTu0?si=48cDB1tEXB666fNc
 
-Mouse Drag to see new necklace launching show lightning.
+Mouse Drag to see new necklace launching show lighting.
 All models from Free3D
 */
 
