@@ -90,13 +90,13 @@ function fitObjectAt(object, maxSize, position) {
 // ---------------------------------------------------------------------------
 
 // Pendant Model
-mtlLoader.load('../11791_Pendant_l3.mtl', (materials) => {
+mtlLoader.load('./11791_Pendant_l3.mtl', (materials) => {
   materials.preload();
 
   const pendantLoader = new OBJLoader();
   pendantLoader.setMaterials(materials);
 
-  pendantLoader.load('../11791_Pendant_l3.obj', (object) => {
+  pendantLoader.load('./11791_Pendant_l3.obj', (object) => {
     object.scale.set(0.5, 0.5, 0.5);
     object.position.set(-1.2, pendantBaseY, 0.3);
 
@@ -131,7 +131,7 @@ mtlLoader.load('../11791_Pendant_l3.mtl', (materials) => {
 // Heart Box Model
 const heartLoader = new OBJLoader();
 
-heartLoader.load('../20793_Heart_Shaped_Box_V1_1.obj', (object) => {
+heartLoader.load('./20793_Heart_Shaped_Box_V1_1.obj', (object) => {
   object.scale.set(1, 1, 1);
   object.position.set(-4, -4, -5);
 
@@ -160,7 +160,7 @@ heartLoader.load('../20793_Heart_Shaped_Box_V1_1.obj', (object) => {
 // Cat Model
 const catLoader = new OBJLoader();
 
-catLoader.load('../16436_Cat_v3.obj', (object) => {
+catLoader.load('./16436_Cat_v3.obj', (object) => {
   object.rotation.set(
     Math.PI / 3,
     Math.PI,
@@ -211,13 +211,13 @@ catLoader.load('../16436_Cat_v3.obj', (object) => {
 // ---------------------------------------------------------------------------
 
 // Candy Models
-mtlLoader.load('../12186_Candy_v1_L3.mtl', (materials) => {
+mtlLoader.load('./12186_Candy_v1_L3.mtl', (materials) => {
   materials.preload();
 
   const candyLoader = new OBJLoader();
   candyLoader.setMaterials(materials);
 
-  candyLoader.load('../12186_Candy_v1_L3.obj', (object) => {
+  candyLoader.load('./12186_Candy_v1_L3.obj', (object) => {
     const candyPositions = [
       new THREE.Vector3(3.5, 10.5, 0.3),
       new THREE.Vector3(3.35, 8.5, -0.8),
@@ -303,7 +303,7 @@ window.addEventListener("wheel", (event) => {
 // ---------------------------------------------------------------------------
 
 // Audio setup
-const cherishAudio = new Audio('../Cherish.mp3');
+const cherishAudio = new Audio('./Cherish.mp3');
 cherishAudio.loop = true;
 cherishAudio.volume = 0;
 
